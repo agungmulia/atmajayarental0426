@@ -4,14 +4,6 @@ import {mapState} from 'vuex'
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
 
-export default{
-  components:{
-    HelloWorld
-  },
-  computed:{
-    ...mapState(['user'])
-  }
-}
 
 </script>
 
@@ -19,7 +11,7 @@ export default{
 
 <template>
   <div>
-    <router-view></router-view>
+    <router-view :key="$route.path"></router-view>
   </div>
 </template>
 
