@@ -25,7 +25,7 @@
           Tambah Aset</router-link>
     </div>
   </template>
-  <input type="text" v-model="search"  placeholder="search"
+  <input type="text" v-model="searchAset"  placeholder="search"
   class="mb-2 focus:ring-pink-500 focus:border-pink-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
   
   <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
@@ -33,7 +33,7 @@
     v-for="(value,ind) in data" 
     :key="value.ID_MOBIL"  
     :value="value"
-    :search="search"
+    :search="searchAset"
     class="opacity-0 animate-fade-in-down"
     :style="{ animationDelay: `${ind*0.1}s` }"
     @delete = "deleteAset(value)"/>

@@ -52,7 +52,7 @@
                
                 <tr 
                 class="animate-fade-in-down" 
-                v-for="(value,ind) in searchPegawai" 
+                v-for="(value,ind) in data" 
                 :style="{ animationDelay: `${ind*0.1}s` }"
                 :key="value.ID_PEGAWAI">
                   <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
