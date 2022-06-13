@@ -276,7 +276,7 @@ const store = createStore({
             let response;
             if(mitra.ID_MITRA){
                 response = axiosClient
-                .put(`/mitra/${mitra.ID_MITRA}`,aset)
+                .put(`/mitra/${mitra.ID_MITRA}`,mitra)
                 .then((res) => {
                     commit("editMitra", res.data);
                     return res;   

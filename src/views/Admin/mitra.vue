@@ -51,7 +51,7 @@
                
                 <tr 
                 class="animate-fade-in-down" 
-                v-for="(value,ind) in data" 
+                v-for="(value,ind) in searchMitra" 
                 :style="{ animationDelay: `${ind*0.1}s` }"
                 :key="value.ID_MITRA">
                   <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">   
@@ -113,7 +113,7 @@ const data = computed(() => store.state.mitra.data);
 store.dispatch("getMitra");
 
 function deleteMitra(value) {
-  if (confirm(`Apakah anda yakin akan menghapus driver?`)) {
+  if (confirm(`Apakah anda yakin akan menghapus mitra?`)) {
     store.dispatch("deleteMitra",value.ID_MITRA).then(() => {
        store.dispatch('getMitra')
     });
@@ -130,7 +130,11 @@ export default {
     }
   },
   computed: {
-    
+    searchMitra: function(){
+    return this.store.state.mitra.data.filter((value) => {
+      return value.NAMA_MITRA.match(this.search);
+      });
+    }
   }
 }
 </script>

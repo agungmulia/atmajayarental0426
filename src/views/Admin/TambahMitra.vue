@@ -110,7 +110,7 @@ if (route.params.id) {
 
 function tambahMitra(){
   if (route.params.id){
-       if (confirm("Apakah anda yakin akan mengupdate data driver?")==true){
+       if (confirm("Apakah anda yakin akan mengupdate data mitra?")==true){
             store.dispatch("tambahMitra", model.value).then(() => {
               router.push({
                 name: "Mitra",
