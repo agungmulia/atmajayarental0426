@@ -30,7 +30,7 @@
   
   <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
     <ListAset 
-    v-for="(value,ind) in searchAset" 
+    v-for="(value,ind) in data" 
     :key="value.ID_MOBIL"  
     :value="value"
     :search="search"

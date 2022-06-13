@@ -583,7 +583,7 @@ const store = createStore({
         },
 
         getTransaksiByCustomer({commit},email){
-            commit("setCurrentTransaksiLoading",true);
+            commit("setTransaksiLoading",true);
             return axiosClient
             .get(`/transaksiByCustomerEmail/${email}`)
             .then((res)=>{
