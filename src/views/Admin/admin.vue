@@ -71,11 +71,7 @@ export default {
     }
   },
   computed: {
-    searchAset: function(){
-    return this.store.state.aset.data.filter((value) => {
-      return value.NAMA_MOBIL.match(this.search);
-      });
-    }
+   
   }
 }
 </script>

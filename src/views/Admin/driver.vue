@@ -161,11 +161,7 @@ export default {
     }
   },
   computed: {
-    searchDriver: function(){
-    return this.store.state.driver.data.filter((value) => {
-      return value.NAMA_DRIVER.match(this.search);
-      });
-    }
+   
   }
 }
 </script>

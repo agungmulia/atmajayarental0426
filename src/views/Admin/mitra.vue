@@ -130,11 +130,7 @@ export default {
     }
   },
   computed: {
-    searchMitra: function(){
-    return this.store.state.mitra.data.filter((value) => {
-      return value.NAMA_MITRA.match(this.search);
-      });
-    }
+    
   }
 }
 </script>
