@@ -140,11 +140,7 @@ export default {
     }
   },
   computed: {
-    searchPegawai: function(){
-    return this.store.state.pegawai.data.filter((value) => {
-      return value.NAMA_PEGAWAI.match(this.search);
-      });
-    }
+    
   }
 }
 </script>
