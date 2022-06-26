@@ -1,5 +1,5 @@
 # Atma Jaya Rental Car
-This is a project I created for one of my study class which is Software Developement Page, here I built a fullstack project which use Vue as the frontend and Laravel as the backend, and also we're given a task to create a mobile apps using the same backend file wich is [Here]
+This is the frontend of a project I created for one of my study class which is Software Developement Page, here I built a fullstack project which use Vue as the frontend and Laravel as the backend [here], and also we're given a task to create a mobile apps using the same backend file wich is [Here]
 
 ![image](https://user-images.githubusercontent.com/90015124/175800663-71e83054-8b8b-44d4-b20b-20209a1ce2ce.png)
 
